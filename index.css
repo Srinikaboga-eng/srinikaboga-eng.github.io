@@ -1,3 +1,131 @@
-h1{
-  color:red;
+/* Basic settings */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact p {
+    display: inline;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* Section headings */
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #444;
+}
+
+
+/* Lists */
+
+li {
+    margin: 10px 0;
+}
+
+
+/* Project */
+
+.project {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.project a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        display: block;
+        margin: 8px;
+    }
+
+    section {
+        margin: 15px;
+    }
+
 }
