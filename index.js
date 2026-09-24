@@ -1,7 +1,4 @@
-let button = document.getElementById("themeButton");
-
-button.addEventListener("click", function() {
-
-    document.body.classList.toggle("dark-mode");
-
-});
+function showContact() {
+    document.getElementById("message").innerText =
+        "You can contact me at srinikaboga@gmail.com";
+}
