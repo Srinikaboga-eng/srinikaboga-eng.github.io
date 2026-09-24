@@ -1,4 +1,5 @@
-/* Remove default spacing */
+/* Remove default browser spacing */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +7,23 @@
 }
 
 
-/* Page background */
+/* Page */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeeee;
+    background-color: #e8e8e8;
     color: #333;
 }
 
 
-/* Main resume */
+/* Resume container */
+
 .resume {
     width: 850px;
     min-height: 1100px;
+
     margin: 30px auto;
+
     background-color: white;
 
     display: flex;
@@ -27,74 +32,96 @@ body {
 }
 
 
-/* LEFT COLUMN */
-.left {
-    width: 35%;
-    padding: 35px 25px;
-    background-color: #f1f1f1;
+/* LEFT SIDE */
+
+.left-column {
+    width: 38%;
+
+    padding: 40px 30px;
+
+    background-color: #f3f3f3;
 }
 
 
-/* RIGHT COLUMN */
-.right {
-    width: 65%;
-    padding: 35px 30px;
+/* RIGHT SIDE */
+
+.right-column {
+    width: 62%;
+
+    padding: 40px 35px;
+
+    background-color: white;
+}
+
+
+/* Student text */
+
+.student {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 8px;
 }
 
 
 /* Name */
-.name-section {
-    margin-bottom: 40px;
-}
-
-
-.small-title {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 8px;
-}
-
 
 h1 {
     font-size: 30px;
+
     letter-spacing: 3px;
-    font-weight: bold;
+
+    margin-bottom: 45px;
+}
+
+
+/* Section */
+
+section {
+    margin-bottom: 35px;
 }
 
 
 /* Section headings */
-h2 {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
 
-    border-bottom: 1px solid #999;
-    padding-bottom: 7px;
+h2 {
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #888;
 }
 
 
 /* Smaller headings */
+
 h3 {
     font-size: 15px;
-    margin-bottom: 8px;
+
+    margin-bottom: 10px;
+
+    line-height: 1.4;
 }
 
 
-/* Sections */
-section {
-    margin-bottom: 30px;
-}
+/* Paragraph */
 
-
-/* Paragraphs */
 p {
     font-size: 13px;
+
     line-height: 1.6;
-    margin-bottom: 8px;
+
+    margin-bottom: 10px;
 }
 
 
-/* Lists */
+/* List */
+
 ul {
     padding-left: 18px;
 }
@@ -102,14 +129,18 @@ ul {
 
 li {
     font-size: 13px;
+
     margin-bottom: 8px;
+
     line-height: 1.4;
 }
 
 
 /* Links */
+
 a {
     color: #333;
+
     text-decoration: none;
 }
 
@@ -119,36 +150,31 @@ a:hover {
 }
 
 
-/* Project heading */
-.right h3 {
-    letter-spacing: 1px;
-    font-size: 16px;
+/* Make technical skill labels slightly bold */
+
+strong {
+    font-weight: bold;
 }
 
 
-/* Mobile responsive design */
+/* Mobile */
+
 @media screen and (max-width: 700px) {
 
     .resume {
         width: 95%;
-        margin: 10px auto;
+
         display: block;
+
+        margin: 10px auto;
     }
 
-    .left,
-    .right {
+    .left-column {
         width: 100%;
     }
 
-    .left {
-        padding: 25px;
+    .right-column {
+        width: 100%;
     }
 
-    .right {
-        padding: 25px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
 }
