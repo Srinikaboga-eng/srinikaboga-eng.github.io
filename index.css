@@ -129,3 +129,19 @@ footer {
     }
 
 }
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #333;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode h3 {
+    color: white;
+}
