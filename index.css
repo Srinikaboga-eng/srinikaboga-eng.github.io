@@ -1,4 +1,6 @@
-/* Remove default browser spacing */
+/* =========================================
+   BASIC SETTINGS
+========================================= */
 
 * {
     margin: 0;
@@ -7,174 +9,314 @@
 }
 
 
-/* Page */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8;
-    color: #333;
+
+    background-color: #eeeeee;
+
+    color: #333333;
+
+    line-height: 1.6;
 }
 
 
-/* Resume container */
+/* =========================================
+   RESUME PAPER
+========================================= */
 
 .resume {
+
     width: 850px;
+
     min-height: 1100px;
 
-    margin: 30px auto;
+    margin: 40px auto;
 
     background-color: white;
 
-    display: flex;
+    padding: 50px;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 
-/* LEFT SIDE */
+/* =========================================
+   HEADER
+========================================= */
 
-.left-column {
-    width: 38%;
+.header {
 
-    padding: 40px 30px;
+    margin-bottom: 40px;
 
-    background-color: #f3f3f3;
+    border-bottom: 1px solid #cccccc;
+
+    padding-bottom: 25px;
 }
 
 
-/* RIGHT SIDE */
+.header h1 {
 
-.right-column {
-    width: 62%;
-
-    padding: 40px 35px;
-
-    background-color: white;
-}
-
-
-/* Student text */
-
-.student {
-    font-size: 13px;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 8px;
-}
-
-
-/* Name */
-
-h1 {
-    font-size: 30px;
+    font-size: 34px;
 
     letter-spacing: 3px;
 
-    margin-bottom: 45px;
+    font-weight: bold;
+
+    color: #222222;
 }
 
 
-/* Section */
+.header p {
 
-section {
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    margin-top: 5px;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+========================================= */
+
+.resume-body {
+
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+}
+
+
+/* =========================================
+   LEFT COLUMN
+========================================= */
+
+.left-column {
+
+    padding-right: 30px;
+
+    border-right: 1px solid #cccccc;
+}
+
+
+/* =========================================
+   RIGHT COLUMN
+========================================= */
+
+.right-column {
+
+    padding-left: 35px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
     margin-bottom: 35px;
 }
 
 
-/* Section headings */
+.section h2 {
 
-h2 {
     font-size: 15px;
 
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+
+    color: #222222;
 
     margin-bottom: 18px;
 
     padding-bottom: 8px;
 
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #cccccc;
 }
 
 
-/* Smaller headings */
+.section h3 {
 
-h3 {
     font-size: 15px;
 
-    margin-bottom: 10px;
-
     line-height: 1.4;
-}
-
-
-/* Paragraph */
-
-p {
-    font-size: 13px;
-
-    line-height: 1.6;
-
-    margin-bottom: 10px;
-}
-
-
-/* List */
-
-ul {
-    padding-left: 18px;
-}
-
-
-li {
-    font-size: 13px;
 
     margin-bottom: 8px;
 
-    line-height: 1.4;
+    color: #333333;
 }
 
 
-/* Links */
+.section p {
 
-a {
-    color: #333;
+    font-size: 13px;
+
+    color: #666666;
+
+    margin-bottom: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+    color: #666666;
+}
+
+
+.icon {
+
+    width: 22px;
+
+    font-size: 15px;
+
+    color: #444444;
+}
+
+
+.contact-item a {
+
+    color: #666666;
 
     text-decoration: none;
 }
 
 
-a:hover {
+.contact-item a:hover {
+
     text-decoration: underline;
 }
 
 
-/* Make technical skill labels slightly bold */
+/* =========================================
+   LISTS
+========================================= */
 
-strong {
-    font-weight: bold;
+ul {
+
+    padding-left: 18px;
 }
 
 
-/* Mobile */
+li {
+
+    font-size: 13px;
+
+    color: #666666;
+
+    margin-bottom: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TECHNICAL SKILLS
+========================================= */
+
+.skill-group {
+
+    margin-bottom: 15px;
+}
+
+
+.skill-group strong {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #333333;
+
+    margin-bottom: 3px;
+}
+
+
+/* =========================================
+   GITHUB LINK
+========================================= */
+
+.github a {
+
+    color: #444444;
+
+    text-decoration: none;
+}
+
+
+.github a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
 
 @media screen and (max-width: 700px) {
 
     .resume {
+
         width: 95%;
 
-        display: block;
+        margin: 15px auto;
 
-        margin: 10px auto;
+        padding: 30px;
     }
+
+
+    .resume-body {
+
+        display: block;
+    }
+
 
     .left-column {
+
         width: 100%;
+
+        padding-right: 0;
+
+        padding-bottom: 30px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #cccccc;
     }
 
+
     .right-column {
+
         width: 100%;
+
+        padding-left: 0;
+
+        padding-top: 30px;
+    }
+
+
+    .header h1 {
+
+        font-size: 27px;
     }
 
 }
