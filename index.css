@@ -1,6 +1,6 @@
-/* ========================================
-   RESET
-======================================== */
+/* =========================================
+   BASIC SETTINGS
+========================================= */
 
 * {
     margin: 0;
@@ -9,292 +9,314 @@
 }
 
 
-/* ========================================
-   PAGE
-======================================== */
-
 body {
     font-family: Arial, sans-serif;
+
     background-color: #eeeeee;
+
     color: #333333;
+
+    line-height: 1.6;
 }
 
 
-/* ========================================
-   RESUME
-======================================== */
+/* =========================================
+   RESUME PAPER
+========================================= */
 
 .resume {
-    width: 900px;
+
+    width: 850px;
+
     min-height: 1100px;
 
-    margin: 20px auto;
+    margin: 40px auto;
 
     background-color: white;
 
-    display: flex;
+    padding: 50px;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 
-/* ========================================
-   LEFT COLUMN
-======================================== */
+/* =========================================
+   HEADER
+========================================= */
 
-.left-column {
-    width: 27%;
+.header {
 
-    padding: 0 20px 30px 20px;
+    margin-bottom: 40px;
 
-    background-color: white;
+    border-bottom: 1px solid #cccccc;
 
-    border-right: 1px solid #aaaaaa;
+    padding-bottom: 25px;
 }
 
 
-/* ========================================
-   RIGHT COLUMN
-======================================== */
+.header h1 {
 
-.right-column {
-    width: 73%;
+    font-size: 34px;
 
-    padding: 0 25px 30px 25px;
+    letter-spacing: 3px;
 
-    background-color: white;
-}
-
-
-/* ========================================
-   HEADER / NAME
-======================================== */
-
-.student {
-    font-size: 12px;
-
-    letter-spacing: 4px;
-
-    text-align: center;
-
-    color: #555555;
-
-    margin-bottom: 5px;
-}
-
-
-h1 {
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 25px;
-
-    letter-spacing: 4px;
-
-    text-align: center;
-
-    font-weight: normal;
+    font-weight: bold;
 
     color: #222222;
-
-    margin-bottom: 5px;
 }
 
 
-/* ========================================
-   SECTION
-======================================== */
+.header p {
 
-section {
-    margin-bottom: 30px;
-}
-
-
-/* ========================================
-   SECTION HEADINGS
-======================================== */
-
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 15px;
+    font-size: 14px;
 
     letter-spacing: 5px;
 
-    font-weight: bold;
+    margin-top: 5px;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+========================================= */
+
+.resume-body {
+
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+}
+
+
+/* =========================================
+   LEFT COLUMN
+========================================= */
+
+.left-column {
+
+    padding-right: 30px;
+
+    border-right: 1px solid #cccccc;
+}
+
+
+/* =========================================
+   RIGHT COLUMN
+========================================= */
+
+.right-column {
+
+    padding-left: 35px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    margin-bottom: 35px;
+}
+
+
+.section h2 {
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
 
     color: #222222;
 
-    padding-bottom: 6px;
+    margin-bottom: 18px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.section h3 {
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    margin-bottom: 8px;
+
+    color: #333333;
+}
+
+
+.section p {
+
+    font-size: 13px;
+
+    color: #666666;
+
+    margin-bottom: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
 
     margin-bottom: 12px;
 
-    border-bottom: 1px solid #aaaaaa;
+    font-size: 13px;
+
+    color: #666666;
 }
 
 
-/* ========================================
-   SUB HEADINGS
-======================================== */
+.icon {
 
-h3 {
-    font-size: 12px;
+    width: 22px;
 
-    font-weight: bold;
+    font-size: 15px;
 
-    color: #333333;
-
-    margin-bottom: 5px;
-
-    line-height: 1.4;
+    color: #444444;
 }
 
 
-/* ========================================
-   PARAGRAPHS
-======================================== */
+.contact-item a {
 
-p {
-    font-size: 11px;
-
-    line-height: 1.55;
-
-    color: #555555;
-
-    margin-bottom: 7px;
-}
-
-
-/* ========================================
-   LIST
-======================================== */
-
-ul {
-    padding-left: 16px;
-}
-
-
-li {
-    font-size: 11px;
-
-    color: #555555;
-
-    line-height: 1.6;
-
-    margin-bottom: 5px;
-}
-
-
-/* ========================================
-   LINKS
-======================================== */
-
-a {
-    color: #333333;
+    color: #666666;
 
     text-decoration: none;
 }
 
 
-a:hover {
+.contact-item a:hover {
+
     text-decoration: underline;
 }
 
 
-/* ========================================
-   CONTACT
-======================================== */
+/* =========================================
+   LISTS
+========================================= */
 
-.contact-item {
-    display: flex;
+ul {
 
-    align-items: center;
-
-    gap: 8px;
-
-    margin-bottom: 10px;
-
-    font-size: 11px;
-
-    color: #555555;
+    padding-left: 18px;
 }
 
 
-.icon {
-    width: 18px;
+li {
 
-    font-size: 12px;
+    font-size: 13px;
 
-    color: #333333;
+    color: #666666;
+
+    margin-bottom: 9px;
+
+    line-height: 1.5;
 }
 
 
-/* ========================================
+/* =========================================
    TECHNICAL SKILLS
-======================================== */
+========================================= */
 
 .skill-group {
-    margin-bottom: 12px;
+
+    margin-bottom: 15px;
 }
 
 
 .skill-group strong {
+
     display: block;
 
-    font-size: 11px;
+    font-size: 13px;
 
     color: #333333;
 
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 
-/* ========================================
-   GITHUB
-======================================== */
+/* =========================================
+   GITHUB LINK
+========================================= */
 
-.github {
-    margin-top: 10px;
+.github a {
+
+    color: #444444;
+
+    text-decoration: none;
 }
 
 
-/* ========================================
-   MOBILE
-======================================== */
+.github a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
 
 @media screen and (max-width: 700px) {
 
-    body {
-        background-color: white;
+    .resume {
+
+        width: 95%;
+
+        margin: 15px auto;
+
+        padding: 30px;
     }
 
 
-    .resume {
-        width: 100%;
-
-        margin: 0;
+    .resume-body {
 
         display: block;
     }
 
 
     .left-column {
+
         width: 100%;
+
+        padding-right: 0;
+
+        padding-bottom: 30px;
 
         border-right: none;
 
-        border-bottom: 1px solid #aaaaaa;
-
-        padding: 20px;
+        border-bottom: 1px solid #cccccc;
     }
 
 
     .right-column {
+
         width: 100%;
 
-        padding: 20px;
+        padding-left: 0;
+
+        padding-top: 30px;
     }
 
 
-    h1 {
-        font-size: 22px;
+    .header h1 {
+
+        font-size: 27px;
     }
 
 }
