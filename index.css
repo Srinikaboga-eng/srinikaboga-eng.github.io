@@ -25,7 +25,7 @@ body {
 ================================ */
 
 .resume {
-    width: 900px;
+    width: 780px;              /* reduced from 900px */
 
     margin: 20px auto;
 
@@ -38,27 +38,27 @@ body {
 ================================ */
 
 .header {
-    text-align: center;
+    text-align: left;
 
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 
     border-bottom: 1px solid #aaa;
 }
 
 
 .header h1 {
-    font-size: 25px;
+    font-size: 30px;           /* increased */
 
     letter-spacing: 5px;
 
     font-weight: bold;
 
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 
 .header p {
-    font-size: 11px;
+    font-size: 13px;           /* increased */
 
     letter-spacing: 4px;
 
@@ -84,9 +84,9 @@ body {
 ================================ */
 
 .left-column {
-    width: 28%;
+    width: 30%;
 
-    padding: 10px 20px 20px 0;
+    padding: 15px 20px 20px 0;
 
     border-right: 1px solid #ccc;
 }
@@ -97,9 +97,9 @@ body {
 ================================ */
 
 .right-column {
-    width: 72%;
+    width: 70%;
 
-    padding: 10px 0 20px 25px;
+    padding: 15px 0 20px 25px;
 }
 
 
@@ -108,7 +108,7 @@ body {
 ================================ */
 
 section {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 
@@ -119,15 +119,15 @@ section {
 h2 {
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 13px;
+    font-size: 15px;           /* increased */
 
     letter-spacing: 4px;
 
     font-weight: bold;
 
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 
-    margin-bottom: 9px;
+    margin-bottom: 11px;
 
     border-bottom: 1px solid #aaa;
 }
@@ -138,7 +138,7 @@ h2 {
 ================================ */
 
 h3 {
-    font-size: 11px;
+    font-size: 13px;           /* increased */
 
     font-weight: bold;
 
@@ -153,13 +153,13 @@ h3 {
 ================================ */
 
 p {
-    font-size: 10px;
+    font-size: 12px;           /* increased */
 
-    line-height: 1.5;
+    line-height: 1.55;
 
     color: #555;
 
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 
@@ -168,18 +168,18 @@ p {
 ================================ */
 
 ul {
-    padding-left: 15px;
+    padding-left: 17px;
 }
 
 
 li {
-    font-size: 10px;
+    font-size: 12px;           /* increased */
 
     line-height: 1.5;
 
     color: #555;
 
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 
@@ -192,24 +192,30 @@ li {
 
     align-items: flex-start;
 
-    gap: 6px;
+    gap: 8px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     line-height: 1.4;
 
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 
     color: #444;
 }
 
 
-.contact-item span:first-child {
-    width: 12px;
+/* Contact icon */
 
-    flex-shrink: 0;
+.contact-icon {
+    width: 18px;
 
-    font-size: 9px;
+    min-width: 18px;
+
+    font-size: 13px;
+
+    text-align: center;
+
+    color: #333;
 }
 
 
