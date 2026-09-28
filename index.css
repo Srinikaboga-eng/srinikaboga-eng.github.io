@@ -1,4 +1,6 @@
-/* Remove default browser spacing */
+/* ========================================
+   RESET
+======================================== */
 
 * {
     margin: 0;
@@ -7,145 +9,185 @@
 }
 
 
-/* Page */
+/* ========================================
+   PAGE
+======================================== */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8;
-    color: #333;
+    background-color: #eeeeee;
+    color: #333333;
 }
 
 
-/* Resume container */
+/* ========================================
+   RESUME
+======================================== */
 
 .resume {
-    width: 850px;
+    width: 900px;
     min-height: 1100px;
 
-    margin: 30px auto;
+    margin: 20px auto;
 
     background-color: white;
 
     display: flex;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 
-/* LEFT SIDE */
+/* ========================================
+   LEFT COLUMN
+======================================== */
 
 .left-column {
-    width: 38%;
+    width: 27%;
 
-    padding: 40px 30px;
+    padding: 0 20px 30px 20px;
 
-    background-color: #f3f3f3;
-}
-#card{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    width: 350px;
-    text-align: center;
+    background-color: white;
+
+    border-right: 1px solid #aaaaaa;
 }
 
-/* RIGHT SIDE */
+
+/* ========================================
+   RIGHT COLUMN
+======================================== */
 
 .right-column {
-    width: 62%;
+    width: 73%;
 
-    padding: 40px 35px;
+    padding: 0 25px 30px 25px;
 
     background-color: white;
 }
 
 
-/* Student text */
+/* ========================================
+   HEADER / NAME
+======================================== */
 
 .student {
-    font-size: 13px;
+    font-size: 12px;
 
     letter-spacing: 4px;
 
-    margin-bottom: 8px;
+    text-align: center;
+
+    color: #555555;
+
+    margin-bottom: 5px;
 }
 
-
-/* Name */
 
 h1 {
-    font-size: 30px;
+    font-family: Georgia, "Times New Roman", serif;
 
-    letter-spacing: 3px;
-
-    margin-bottom: 45px;
-}
-
-
-/* Section */
-
-section {
-    margin-bottom: 35px;
-}
-
-
-/* Section headings */
-
-h2 {
-    font-size: 15px;
+    font-size: 25px;
 
     letter-spacing: 4px;
 
-    margin-bottom: 18px;
+    text-align: center;
 
-    padding-bottom: 8px;
+    font-weight: normal;
 
-    border-bottom: 1px solid #888;
+    color: #222222;
+
+    margin-bottom: 5px;
 }
 
 
-/* Smaller headings */
+/* ========================================
+   SECTION
+======================================== */
 
-h3 {
+section {
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 15px;
 
-    margin-bottom: 10px;
+    letter-spacing: 5px;
+
+    font-weight: bold;
+
+    color: #222222;
+
+    padding-bottom: 6px;
+
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+/* ========================================
+   SUB HEADINGS
+======================================== */
+
+h3 {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #333333;
+
+    margin-bottom: 5px;
 
     line-height: 1.4;
 }
 
 
-/* Paragraph */
+/* ========================================
+   PARAGRAPHS
+======================================== */
 
 p {
-    font-size: 13px;
+    font-size: 11px;
 
-    line-height: 1.6;
+    line-height: 1.55;
 
-    margin-bottom: 10px;
+    color: #555555;
+
+    margin-bottom: 7px;
 }
 
 
-/* List */
+/* ========================================
+   LIST
+======================================== */
 
 ul {
-    padding-left: 18px;
+    padding-left: 16px;
 }
 
 
 li {
-    font-size: 13px;
+    font-size: 11px;
 
-    margin-bottom: 8px;
+    color: #555555;
 
-    line-height: 1.4;
+    line-height: 1.6;
+
+    margin-bottom: 5px;
 }
 
 
-/* Links */
+/* ========================================
+   LINKS
+======================================== */
 
 a {
-    color: #333;
+    color: #333333;
 
     text-decoration: none;
 }
@@ -156,31 +198,103 @@ a:hover {
 }
 
 
-/* Make technical skill labels slightly bold */
+/* ========================================
+   CONTACT
+======================================== */
 
-strong {
-    font-weight: bold;
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+
+    color: #555555;
 }
 
 
-/* Mobile */
+.icon {
+    width: 18px;
+
+    font-size: 12px;
+
+    color: #333333;
+}
+
+
+/* ========================================
+   TECHNICAL SKILLS
+======================================== */
+
+.skill-group {
+    margin-bottom: 12px;
+}
+
+
+.skill-group strong {
+    display: block;
+
+    font-size: 11px;
+
+    color: #333333;
+
+    margin-bottom: 2px;
+}
+
+
+/* ========================================
+   GITHUB
+======================================== */
+
+.github {
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
 
 @media screen and (max-width: 700px) {
 
+    body {
+        background-color: white;
+    }
+
+
     .resume {
-        width: 95%;
+        width: 100%;
+
+        margin: 0;
 
         display: block;
-
-        margin: 10px auto;
     }
+
 
     .left-column {
         width: 100%;
+
+        border-right: none;
+
+        border-bottom: 1px solid #aaaaaa;
+
+        padding: 20px;
     }
+
 
     .right-column {
         width: 100%;
+
+        padding: 20px;
+    }
+
+
+    h1 {
+        font-size: 22px;
     }
 
 }
