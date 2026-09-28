@@ -1,7 +1,4 @@
-/* =========================================
-   BASIC SETTINGS
-========================================= */
-
+/* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
@@ -9,314 +6,149 @@
 }
 
 
+/* Page background */
 body {
     font-family: Arial, sans-serif;
-
     background-color: #eeeeee;
-
-    color: #333333;
-
-    line-height: 1.6;
+    color: #333;
 }
 
 
-/* =========================================
-   RESUME PAPER
-========================================= */
-
+/* Main resume */
 .resume {
-
     width: 850px;
-
     min-height: 1100px;
-
-    margin: 40px auto;
-
+    margin: 30px auto;
     background-color: white;
-
-    padding: 50px;
-
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-}
-
-
-/* =========================================
-   HEADER
-========================================= */
-
-.header {
-
-    margin-bottom: 40px;
-
-    border-bottom: 1px solid #cccccc;
-
-    padding-bottom: 25px;
-}
-
-
-.header h1 {
-
-    font-size: 34px;
-
-    letter-spacing: 3px;
-
-    font-weight: bold;
-
-    color: #222222;
-}
-
-
-.header p {
-
-    font-size: 14px;
-
-    letter-spacing: 5px;
-
-    margin-top: 5px;
-
-    color: #777777;
-}
-
-
-/* =========================================
-   TWO COLUMN LAYOUT
-========================================= */
-
-.resume-body {
-
-    display: grid;
-
-    grid-template-columns: 35% 65%;
-}
-
-
-/* =========================================
-   LEFT COLUMN
-========================================= */
-
-.left-column {
-
-    padding-right: 30px;
-
-    border-right: 1px solid #cccccc;
-}
-
-
-/* =========================================
-   RIGHT COLUMN
-========================================= */
-
-.right-column {
-
-    padding-left: 35px;
-}
-
-
-/* =========================================
-   SECTIONS
-========================================= */
-
-.section {
-
-    margin-bottom: 35px;
-}
-
-
-.section h2 {
-
-    font-size: 15px;
-
-    letter-spacing: 3px;
-
-    color: #222222;
-
-    margin-bottom: 18px;
-
-    padding-bottom: 8px;
-
-    border-bottom: 1px solid #cccccc;
-}
-
-
-.section h3 {
-
-    font-size: 15px;
-
-    line-height: 1.4;
-
-    margin-bottom: 8px;
-
-    color: #333333;
-}
-
-
-.section p {
-
-    font-size: 13px;
-
-    color: #666666;
-
-    margin-bottom: 10px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact-item {
 
     display: flex;
 
-    align-items: center;
-
-    gap: 10px;
-
-    margin-bottom: 12px;
-
-    font-size: 13px;
-
-    color: #666666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 
-.icon {
+/* LEFT COLUMN */
+.left {
+    width: 35%;
+    padding: 35px 25px;
+    background-color: #f1f1f1;
+}
 
-    width: 22px;
 
+/* RIGHT COLUMN */
+.right {
+    width: 65%;
+    padding: 35px 30px;
+}
+
+
+/* Name */
+.name-section {
+    margin-bottom: 40px;
+}
+
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+/* Section headings */
+h2 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #999;
+    padding-bottom: 7px;
+}
+
+
+/* Smaller headings */
+h3 {
     font-size: 15px;
-
-    color: #444444;
+    margin-bottom: 8px;
 }
 
 
-.contact-item a {
-
-    color: #666666;
-
-    text-decoration: none;
+/* Sections */
+section {
+    margin-bottom: 30px;
 }
 
 
-.contact-item a:hover {
-
-    text-decoration: underline;
+/* Paragraphs */
+p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
 
-/* =========================================
-   LISTS
-========================================= */
-
+/* Lists */
 ul {
-
     padding-left: 18px;
 }
 
 
 li {
-
     font-size: 13px;
-
-    color: #666666;
-
-    margin-bottom: 9px;
-
-    line-height: 1.5;
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 
-/* =========================================
-   TECHNICAL SKILLS
-========================================= */
-
-.skill-group {
-
-    margin-bottom: 15px;
-}
-
-
-.skill-group strong {
-
-    display: block;
-
-    font-size: 13px;
-
-    color: #333333;
-
-    margin-bottom: 3px;
-}
-
-
-/* =========================================
-   GITHUB LINK
-========================================= */
-
-.github a {
-
-    color: #444444;
-
+/* Links */
+a {
+    color: #333;
     text-decoration: none;
 }
 
 
-.github a:hover {
-
+a:hover {
     text-decoration: underline;
 }
 
 
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-========================================= */
+/* Project heading */
+.right h3 {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
 
+
+/* Mobile responsive design */
 @media screen and (max-width: 700px) {
 
     .resume {
-
         width: 95%;
-
-        margin: 15px auto;
-
-        padding: 30px;
-    }
-
-
-    .resume-body {
-
+        margin: 10px auto;
         display: block;
     }
 
-
-    .left-column {
-
+    .left,
+    .right {
         width: 100%;
-
-        padding-right: 0;
-
-        padding-bottom: 30px;
-
-        border-right: none;
-
-        border-bottom: 1px solid #cccccc;
     }
 
-
-    .right-column {
-
-        width: 100%;
-
-        padding-left: 0;
-
-        padding-top: 30px;
+    .left {
+        padding: 25px;
     }
 
-
-    .header h1 {
-
-        font-size: 27px;
+    .right {
+        padding: 25px;
     }
 
+    h1 {
+        font-size: 25px;
+    }
 }
