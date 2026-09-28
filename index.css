@@ -1,6 +1,6 @@
-/* ================================
+/* ========================================
    RESET
-================================ */
+======================================== */
 
 * {
     margin: 0;
@@ -9,23 +9,23 @@
 }
 
 
-/* ================================
+/* ========================================
    PAGE
-================================ */
+======================================== */
 
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #333;
+    color: #333333;
 }
 
 
-/* ================================
+/* ========================================
    RESUME
-================================ */
+======================================== */
 
 .resume {
-    width: 780px;              /* reduced from 900px */
+    width: 780px;
 
     margin: 20px auto;
 
@@ -33,44 +33,46 @@ body {
 }
 
 
-/* ================================
+/* ========================================
    HEADER
-================================ */
+======================================== */
 
 .header {
     text-align: left;
 
     padding-bottom: 12px;
 
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 
 .header h1 {
-    font-size: 30px;           /* increased */
+    font-size: 32px;
 
     letter-spacing: 5px;
 
     font-weight: bold;
 
-    margin-bottom: 3px;
+    color: #222222;
+
+    margin-bottom: 4px;
 }
 
 
 .header p {
-    font-size: 13px;           /* increased */
+    font-size: 14px;
 
     letter-spacing: 4px;
 
     font-style: italic;
 
-    color: #555;
+    color: #555555;
 }
 
 
-/* ================================
+/* ========================================
    TWO COLUMN LAYOUT
-================================ */
+======================================== */
 
 .resume-body {
     display: flex;
@@ -79,93 +81,97 @@ body {
 }
 
 
-/* ================================
+/* ========================================
    LEFT COLUMN
-================================ */
+======================================== */
 
 .left-column {
     width: 30%;
 
-    padding: 15px 20px 20px 0;
+    padding: 18px 20px 25px 0;
 
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
 }
 
 
-/* ================================
+/* ========================================
    RIGHT COLUMN
-================================ */
+======================================== */
 
 .right-column {
     width: 70%;
 
-    padding: 15px 0 20px 25px;
+    padding: 18px 0 25px 25px;
 }
 
 
-/* ================================
+/* ========================================
    SECTIONS
-================================ */
+======================================== */
 
 section {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
 }
 
 
-/* ================================
-   SECTION TITLE
-================================ */
+/* ========================================
+   SECTION HEADINGS
+======================================== */
 
 h2 {
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 15px;           /* increased */
+    font-size: 16px;
 
     letter-spacing: 4px;
 
     font-weight: bold;
 
+    color: #222222;
+
     padding-bottom: 6px;
 
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 
-/* ================================
+/* ========================================
    SMALL HEADINGS
-================================ */
+======================================== */
 
 h3 {
-    font-size: 13px;           /* increased */
+    font-size: 13px;
 
     font-weight: bold;
 
+    color: #333333;
+
     line-height: 1.4;
 
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 
-/* ================================
-   TEXT
-================================ */
+/* ========================================
+   PARAGRAPHS
+======================================== */
 
 p {
-    font-size: 12px;           /* increased */
+    font-size: 13px;
 
     line-height: 1.55;
 
-    color: #555;
+    color: #555555;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 
-/* ================================
-   LIST
-================================ */
+/* ========================================
+   LISTS
+======================================== */
 
 ul {
     padding-left: 17px;
@@ -173,19 +179,19 @@ ul {
 
 
 li {
-    font-size: 12px;           /* increased */
+    font-size: 13px;
 
     line-height: 1.5;
 
-    color: #555;
+    color: #555555;
 
     margin-bottom: 5px;
 }
 
 
-/* ================================
+/* ========================================
    CONTACT
-================================ */
+======================================== */
 
 .contact-item {
     display: flex;
@@ -194,37 +200,39 @@ li {
 
     gap: 8px;
 
-    font-size: 12px;
+    font-size: 13px;
 
-    line-height: 1.4;
+    line-height: 1.5;
 
     margin-bottom: 9px;
 
-    color: #444;
+    color: #444444;
 }
 
 
-/* Contact icon */
+/* ========================================
+   CONTACT ICONS
+======================================== */
 
 .contact-icon {
     width: 18px;
 
     min-width: 18px;
 
-    font-size: 13px;
+    font-size: 14px;
 
     text-align: center;
 
-    color: #333;
+    color: #333333;
 }
 
 
-/* ================================
+/* ========================================
    LINKS
-================================ */
+======================================== */
 
 a {
-    color: #333;
+    color: #333333;
 
     text-decoration: none;
 }
@@ -235,45 +243,73 @@ a:hover {
 }
 
 
-/* ================================
-   STRONG TEXT
-================================ */
+/* ========================================
+   BOLD TEXT
+======================================== */
 
 strong {
-    color: #333;
+    color: #333333;
+
+    font-weight: bold;
 }
 
 
-/* ================================
-   MOBILE
-================================ */
+/* ========================================
+   GITHUB
+======================================== */
+
+.github {
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
 
 @media screen and (max-width: 700px) {
 
+    body {
+        background-color: white;
+    }
+
+
     .resume {
         width: 95%;
+
+        margin: 10px auto;
     }
+
 
     .resume-body {
         display: block;
     }
+
 
     .left-column {
         width: 100%;
 
         border-right: none;
 
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #cccccc;
 
         padding-right: 0;
+
+        padding-bottom: 25px;
     }
+
 
     .right-column {
         width: 100%;
 
         padding-left: 0;
 
-        padding-top: 20px;
+        padding-top: 25px;
+    }
+
+
+    .header h1 {
+        font-size: 27px;
     }
 
 }
