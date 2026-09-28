@@ -41,7 +41,13 @@ body {
 
     background-color: #f3f3f3;
 }
-
+#card{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 350px;
+    text-align: center;
+}
 
 /* RIGHT SIDE */
 
