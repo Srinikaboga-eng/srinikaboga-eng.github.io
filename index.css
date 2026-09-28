@@ -1,4 +1,7 @@
-/* Remove default spacing */
+/* ================================
+   RESET
+================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,110 +9,217 @@
 }
 
 
-/* Page background */
+/* ================================
+   PAGE
+================================ */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeeee;
+    background-color: white;
     color: #333;
 }
 
 
-/* Main resume */
-.resume {
-    width: 850px;
-    min-height: 1100px;
-    margin: 30px auto;
-    background-color: white;
+/* ================================
+   RESUME
+================================ */
 
+.resume {
+    width: 900px;
+
+    margin: 20px auto;
+
+    background-color: white;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    text-align: center;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #aaa;
+}
+
+
+.header h1 {
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    font-weight: bold;
+
+    margin-bottom: 2px;
+}
+
+
+.header p {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    font-style: italic;
+
+    color: #555;
+}
+
+
+/* ================================
+   TWO COLUMN LAYOUT
+================================ */
+
+.resume-body {
     display: flex;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    align-items: stretch;
 }
 
 
-/* LEFT COLUMN */
-.left {
-    width: 35%;
-    padding: 35px 25px;
-    background-color: #f1f1f1;
+/* ================================
+   LEFT COLUMN
+================================ */
+
+.left-column {
+    width: 28%;
+
+    padding: 10px 20px 20px 0;
+
+    border-right: 1px solid #ccc;
 }
 
 
-/* RIGHT COLUMN */
-.right {
-    width: 65%;
-    padding: 35px 30px;
+/* ================================
+   RIGHT COLUMN
+================================ */
+
+.right-column {
+    width: 72%;
+
+    padding: 10px 0 20px 25px;
 }
 
 
-/* Name */
-.name-section {
-    margin-bottom: 40px;
-}
+/* ================================
+   SECTIONS
+================================ */
 
-
-.small-title {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 8px;
-}
-
-
-h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-
-
-/* Section headings */
-h2 {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-
-    border-bottom: 1px solid #999;
-    padding-bottom: 7px;
-}
-
-
-/* Smaller headings */
-h3 {
-    font-size: 15px;
-    margin-bottom: 8px;
-}
-
-
-/* Sections */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 
-/* Paragraphs */
-p {
+/* ================================
+   SECTION TITLE
+================================ */
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 8px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    padding-bottom: 5px;
+
+    margin-bottom: 9px;
+
+    border-bottom: 1px solid #aaa;
 }
 
 
-/* Lists */
+/* ================================
+   SMALL HEADINGS
+================================ */
+
+h3 {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================================
+   TEXT
+================================ */
+
+p {
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   LIST
+================================ */
+
 ul {
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
 
 li {
-    font-size: 13px;
-    margin-bottom: 8px;
-    line-height: 1.4;
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-bottom: 4px;
 }
 
 
-/* Links */
+/* ================================
+   CONTACT
+================================ */
+
+.contact-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    margin-bottom: 7px;
+
+    color: #444;
+}
+
+
+.contact-item span:first-child {
+    width: 12px;
+
+    flex-shrink: 0;
+
+    font-size: 9px;
+}
+
+
+/* ================================
+   LINKS
+================================ */
+
 a {
     color: #333;
+
     text-decoration: none;
 }
 
@@ -119,36 +229,45 @@ a:hover {
 }
 
 
-/* Project heading */
-.right h3 {
-    letter-spacing: 1px;
-    font-size: 16px;
+/* ================================
+   STRONG TEXT
+================================ */
+
+strong {
+    color: #333;
 }
 
 
-/* Mobile responsive design */
+/* ================================
+   MOBILE
+================================ */
+
 @media screen and (max-width: 700px) {
 
     .resume {
         width: 95%;
-        margin: 10px auto;
+    }
+
+    .resume-body {
         display: block;
     }
 
-    .left,
-    .right {
+    .left-column {
         width: 100%;
+
+        border-right: none;
+
+        border-bottom: 1px solid #ccc;
+
+        padding-right: 0;
     }
 
-    .left {
-        padding: 25px;
+    .right-column {
+        width: 100%;
+
+        padding-left: 0;
+
+        padding-top: 20px;
     }
 
-    .right {
-        padding: 25px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
 }
